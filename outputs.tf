@@ -1,5 +1,5 @@
-# Copyright (C) 2021 Nicolas Lamirault <nicolas.lamirault@gmail.com>
-
+# Copyright (C) 2020 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -12,16 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-config {
-  module = false
-  force = false
-  disabled_by_default = false
+#output "user_assigned_identity_id" {
+#  value       = azurerm_user_assigned_identity.sops.id
+#  description = "ID of the user assigned identity"
+#}
 
-  ignore_module = {
-  }
+#output "user_assigned_identity_name" {
+#  value       = azurerm_user_assigned_identity.sops.name
+#  description = "Name of the user assigned identity"
+#}
 
-}
-
-plugin "azurerm" {
-  enabled = true
-}
+#output "sops_key_id" {
+#  value       = azurerm_key_vault_key.sops.id
+#  description = "Sops key ID"
+#}
