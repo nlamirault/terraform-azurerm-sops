@@ -24,38 +24,20 @@
 #############################################################################
 # Core
 
-# variable "resource_group_name" {
-#   description = "Name of the resource group to be imported."
-#   type        = string
-# }
-
 variable "sp_name" {
   description = "Name of the main service."
   type        = string
 }
 
 #############################################################################
-# AKS
-
-variable "aks_resource_group_name" {
-  type        = string
-  description = "The Name which should be used for the AKS Resource Group"
-}
-
-# variable "cluster_name" {
-#   type        = string
-#   description = "Name of the AKS cluster"
-# }
-
-#############################################################################
 # Sops
 
-variable "sops_resource_group_name" {
+variable "resource_group_name" {
+  description = "Name of the resource group to be imported."
   type        = string
-  description = "The Name which should be used for this Resource Group"
 }
 
-variable "sops_resource_group_location" {
+variable "resource_group_location" {
   type        = string
   description = "The Azure Region where the Resource Group should exist"
 }

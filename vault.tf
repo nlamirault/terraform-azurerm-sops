@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-resource "azurerm_resource_group" "sops" {
-  name     = var.sops_resource_group_name
-  location = var.sops_resource_group_location
-  tags     = var.tags
-}
-
 resource "azurerm_key_vault" "sops" {
   name                = format("%s", local.service_name)
   resource_group_name = azurerm_resource_group.sops.name

@@ -58,9 +58,8 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| aks\_resource\_group\_name | The Name which should be used for the AKS Resource Group | `string` | n/a | yes |
-| sops\_resource\_group\_location | The Azure Region where the Resource Group should exist | `string` | n/a | yes |
-| sops\_resource\_group\_name | The Name which should be used for this Resource Group | `string` | n/a | yes |
+| resource\_group\_location | The Azure Region where the Resource Group should exist | `string` | n/a | yes |
+| resource\_group\_name | Name of the resource group to be imported. | `string` | n/a | yes |
 | sp\_name | Name of the main service. | `string` | n/a | yes |
 | tags | A mapping of tags to assign to the resource. | `map(string)` | <pre>{<br>  "made-by": "terraform"<br>}</pre> | no |
 
