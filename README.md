@@ -27,15 +27,15 @@ and variables :
 | Name | Version |
 |------|---------|
 | terraform | >= 0.14.0 |
-| azuread | ~> 1.0 |
-| azurerm | 2.48.0 |
+| azuread | >= 1.4.0 |
+| azurerm | >= 2.48.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| azuread | ~> 1.0 |
-| azurerm | 2.48.0 |
+| azuread | >= 1.4.0 |
+| azurerm | >= 2.48.0 |
 
 ## Modules
 
@@ -45,7 +45,7 @@ No Modules.
 
 | Name |
 |------|
-| [azuread_service_principal](https://registry.terraform.io/providers/hashicorp/azuread/1.0/docs/data-sources/service_principal) |
+| [azuread_service_principal](https://registry.terraform.io/providers/hashicorp/azuread/1.4.0/docs/data-sources/service_principal) |
 | [azurerm_client_config](https://registry.terraform.io/providers/hashicorp/azurerm/2.48.0/docs/data-sources/client_config) |
 | [azurerm_key_vault](https://registry.terraform.io/providers/hashicorp/azurerm/2.48.0/docs/resources/key_vault) |
 | [azurerm_key_vault_access_policy](https://registry.terraform.io/providers/hashicorp/azurerm/2.48.0/docs/resources/key_vault_access_policy) |
