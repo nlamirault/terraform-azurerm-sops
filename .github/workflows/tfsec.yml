@@ -24,7 +24,7 @@ on:
 
 jobs:
   tfsec:
-    name: aws
+    name: azure
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
