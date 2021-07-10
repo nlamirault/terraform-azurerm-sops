@@ -49,3 +49,8 @@ variable "tags" {
     "made-by" = "terraform"
   }
 }
+
+variable "expiration_date" {
+  type        = string
+  description = "Expiration UTC datetime (Y-m-d'T'H:M:S'Z')"
+}

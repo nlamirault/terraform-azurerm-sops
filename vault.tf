@@ -87,6 +87,8 @@ resource "azurerm_key_vault_key" "sops" {
   key_type     = "RSA"
   key_size     = "4096"
 
+  expiration_date = var.expiration_date
+
   key_opts = [
     "encrypt",
     "decrypt",
