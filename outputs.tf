@@ -13,16 +13,16 @@
 # limitations under the License.
 
 output "user_assigned_identity_id" {
- value       = azurerm_user_assigned_identity.sops.id
- description = "ID of the user assigned identity"
+  value       = azurerm_user_assigned_identity.sops.id
+  description = "ID of the user assigned identity"
 }
 
 output "user_assigned_identity_name" {
- value       = azurerm_user_assigned_identity.sops.name
- description = "Name of the user assigned identity"
+  value       = azurerm_user_assigned_identity.sops.name
+  description = "Name of the user assigned identity"
 }
 
 output "key_id" {
- value       = azurerm_key_vault_key.sops.id
- description = "Sops key ID"
+  value       = azurerm_key_vault_key.sops.id
+  description = "Sops key ID"
 }

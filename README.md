@@ -26,7 +26,7 @@ and variables :
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.14.0 |
+| terraform | >= 1.0.0 |
 | azuread | >= 1.4.0 |
 | azurerm | >= 2.48.0 |
 
@@ -58,6 +58,7 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| expiration\_date | Expiration UTC datetime (Y-m-d'T'H:M:S'Z') | `string` | n/a | yes |
 | resource\_group\_location | The Azure Region where the Resource Group should exist | `string` | n/a | yes |
 | resource\_group\_name | Name of the resource group to be imported. | `string` | n/a | yes |
 | sp\_name | Name of the main service. | `string` | n/a | yes |
@@ -65,5 +66,9 @@ No Modules.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| key\_id | Sops key ID |
+| user\_assigned\_identity\_id | ID of the user assigned identity |
+| user\_assigned\_identity\_name | Name of the user assigned identity |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
