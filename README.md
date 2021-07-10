@@ -58,9 +58,12 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| enabled\_for\_disk\_encryption | Specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys | `bool` | n/a | yes |
 | expiration\_date | Expiration UTC datetime (Y-m-d'T'H:M:S'Z') | `string` | n/a | yes |
+| purge\_protection\_enabled | Is Purge Protection enabled for this Key Vault | `bool` | n/a | yes |
 | resource\_group\_location | The Azure Region where the Resource Group should exist | `string` | n/a | yes |
 | resource\_group\_name | Name of the resource group to be imported. | `string` | n/a | yes |
+| soft\_delete\_retention\_days | The number of days that items should be retained for once soft-deleted | `number` | `7` | no |
 | sp\_name | Name of the main service. | `string` | n/a | yes |
 | tags | A mapping of tags to assign to the resource. | `map(string)` | <pre>{<br>  "made-by": "terraform"<br>}</pre> | no |
 
