@@ -50,6 +50,22 @@ variable "tags" {
   }
 }
 
+variable "enabled_for_disk_encryption" {
+  type        = bool
+  description = "Specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys"
+}
+
+variable "purge_protection_enabled" {
+  type        = bool
+  description = "Is Purge Protection enabled for this Key Vault"
+}
+
+variable "soft_delete_retention_days" {
+  type        = number
+  description = "The number of days that items should be retained for once soft-deleted"
+  default     = 7
+}
+
 variable "expiration_date" {
   type        = string
   description = "Expiration UTC datetime (Y-m-d'T'H:M:S'Z')"

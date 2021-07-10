@@ -18,7 +18,12 @@ resource "azurerm_key_vault" "sops" {
   location            = azurerm_resource_group.sops.location
   tenant_id           = data.azurerm_client_config.current.tenant_id
   sku_name            = "standard"
-  tags                = var.tags
+
+  enabled_for_disk_encryption = var.enabled_for_disk_encryption
+  soft_delete_retention_days  = var.soft_delete_retention_days
+  purge_protection_enabled    = var.purge_protection_enabled
+
+  tags = var.tags
 }
 
 resource "azurerm_key_vault_access_policy" "object" {
