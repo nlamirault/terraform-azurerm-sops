@@ -23,6 +23,11 @@ resource "azurerm_key_vault" "sops" {
   soft_delete_retention_days  = var.soft_delete_retention_days
   purge_protection_enabled    = var.purge_protection_enabled
 
+  network_acls {
+    default_action = "Deny"
+    bypass = "AzureServices"
+  }
+
   tags = var.tags
 }
 
